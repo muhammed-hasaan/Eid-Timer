@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/1200px-Islamic-Symbol.png" class="logo">
+
+
+
+        <div class="content">
+            <p>Ramadan Mubarak to all of you and your family</p>
+            <h1>Remaining Time in <span> Eid ul Fitr </span></h1>
+
+
+            <div class="Ramadan-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minuteas</span>
+                </div>
+
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <img src="https://daniyalhashmi22.github.io/Eid-ul-Fitr-time/img/images-for--red-star-logo-png-13.png"
+            class="masj">
+        <img src="https://daniyalhashmi22.github.io/Eid-ul-Fitr-time/img/images-for--red-star-logo-png-13.png"
+            class="masj5">
+        <img src="https://daniyalhashmi22.github.io/Eid-ul-Fitr-time/img/images-for--red-star-logo-png-13.png"
+            class="masj6">
+
+
+        <img src="https://daniyalhashmi22.github.io/Eid-ul-Fitr-time/img/images-for--red-star-logo-png-13.png"
+            class="masj2">
+        <img src="https://daniyalhashmi22.github.io/Eid-ul-Fitr-time/img/images-for--red-star-logo-png-13.png"
+            class="masj3">
+
+        <img src="https://daniyalhashmi22.github.io/Eid-ul-Fitr-time/img/images-for--red-star-logo-png-13.png"
+            class="masj4">
+    </div>
+
+
+    <script>
+        var countDowndate = new Date("april 23,2023 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDowndate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        }, 1000);
+    </script>
+</body>
+
+</html>

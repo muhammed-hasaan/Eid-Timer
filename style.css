@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://image.freepik.com/free-vector/3d-crescent-moon_1302-10059.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.logo {
+    width: 70px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    /* margin-top: -220px; */
+    /* margin-left: 395px; */
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+h1 {
+    color: rgb(255, 234, 0);
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.content span {
+    color: #ff3753;
+}
+
+.Ramadan-time {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.Ramadan-time div {
+    flex-basis: 130px;
+
+}
+
+.Ramadan-time div p {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.masj {
+    width: 100px;
+    position: absolute;
+    right: 10%;
+    bottom: 40px;
+    animation: masj 4s linear infinite;
+
+}
+
+.masj5 {
+    width: 100px;
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    animation: masj 4.5s linear infinite;
+
+}
+
+.masj6 {
+    width: 100px;
+    position: absolute;
+    right: 6%;
+    bottom: 40px;
+    animation: masj 6s linear infinite;
+
+}
+
+.masj2 {
+    width: 50px;
+    position: absolute;
+    right: 9%;
+    bottom: 0;
+    animation: masj 5.5s linear infinite;
+}
+
+.masj3 {
+    width: 50px;
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    animation: masj 5.4s linear infinite;
+}
+
+.masj4 {
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    animation: masj 5.1s linear infinite;
+}
+
+#seconds {
+    color: yellow;
+}
+
+#hours {
+    color: red;
+}
+
+@keyframes masj {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 150%;
+        opacity: 3;
+    }
+
+}
